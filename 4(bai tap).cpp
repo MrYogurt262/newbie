@@ -1,0 +1,367 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    int nam = n / 365;
+    int tuan = (n % 365) / 7;
+    int ngay = (n % 365) % 7;
+    cout << nam << " " << tuan << " " << ngay << endl;
+
+    return 0;
+}
+
+// bai 1
+//  int a, b;
+//  cin >> a >> b;
+//  if (b != 0)
+//  {
+//      int phannguyen = a / b;
+//      float du =a % b;
+//      cout << phannguyen << " " << du << endl;
+//  }
+//  else
+//  {
+//      cout << "mau phai khac khong \n";
+//  }
+
+// bai 2
+//  long long x;
+//  cin >> x;
+//  if ((0 < x) && (x <= 10000))
+//  {
+//      long long kq = pow(x, 3) + 3 * pow(x, 2) + x + 1;
+//      cout << kq << endl;
+//  }
+//  else
+//  {
+//      cout << "gia tri nhap vao khong dung \n";
+//  }
+
+// bai 3
+//  long long a, b, c;
+//  cin >> a >> b >> c;
+//  long long res = a * (b + c) + b * (a + c);
+//  cout << res << endl;
+
+// bai 4
+//  long long a, b;
+//      // cin >> a >> b;
+//      // long long tong = a + b;
+//      // long long hieu = a - b;
+//      // long long tich = a * b;
+//      // double thuong = 1.0 * a / b;
+//      // cout << tong << " " << hieu << " " << tich << " " << fixed << setprecision(2) << thuong << endl;
+
+// bai 5
+//  long long r;
+//  cin >> r;
+//  double chuvi = 2 * 3.14159 * r, dientich = 3.14159 * pow(r, 2);
+//  cout << fixed << setprecision(2) << chuvi << " " << fixed << setprecision(2) << dientich << endl;
+
+// bai 6
+// int a, b, c, d;
+// cin >> a >> b >> c >> d;
+// float kc = 1.0 * sqrt(pow(c - a, 2) + pow(d - b, 2));
+// cout << fixed << setprecision(2) << kc << endl;
+
+// bai 7
+// int C;
+// cin >> C;
+// float F =  ( 1.0 * C * 9 / 5 + 32);
+// cout << fixed << setprecision(2) << F << endl;
+
+// bai 8
+// long long x;
+//     cin >> x;
+//     long long S = (1ll * 2 * 1 + x - 1) * x / 2;
+//     cout << S;
+
+// bai 9
+// int x;
+// cin >> x;
+// long long S = 1ll * x * (x + 1) * (2 * x + 1) / 6;
+// cout << S;
+
+// bai 10
+// long long x;
+// cin >> x;
+// double S = 1 -  1.0 / (x - 1);
+// cout << fixed << setprecision(2) << S;
+
+// bai 11
+// long long x;
+// cin >> x;
+// long long S = 2 * (1ll * 2 * 1 + x - 1) * x / 2;
+// cout << S;
+// return 0;
+
+// bai 12
+// long long x;
+// cin >> x;
+// if (x % 2 == 0)
+// {
+//     long long th1 = x / 2;
+//     cout << th1 << endl;
+// }
+// else
+// {
+//     double th2 = 1.0 * (x - 1) / 2 - x;
+//     cout << th2 << endl;
+// }
+
+// bai 13
+// int a, b;
+// cin >> a >> b;
+// cout << a / b * b;
+
+// bai 14
+// int a, b;
+// cin >> a >> b;
+// if (a % b == 0)
+// {
+//     cout << a / b * b << endl;
+// }
+// else
+// {
+//     cout << (a / b + 1) * b << endl;
+// }
+// hoac la cout << (a + b -1)/ b * b << endl;
+
+// bai 15
+// long long n;
+// cin >> n;
+// bool cc = ((n % 3 == 0) && (n % 5 == 0));
+// if (cc)
+// {
+//     cout << "1" << endl;
+// }
+// else
+// {
+//     cout << "0";
+// }
+
+// bai 16
+// int a;
+// cin >> a;
+// if ((a % 4 == 0) && (a % 100 != 0))
+// {
+//     cout << "YES" << endl;
+// }
+// else if (a <= 0)
+// {
+//     cout << "INVALID" << endl;
+// }
+// else
+// {
+//     cout << "NO " << endl;
+// }
+
+// bai 17
+// int t, n;
+// cin >> t >> n;
+// if ((t < 1) || (t > 12) || (n))
+// {
+//     cout << "INVALID" << endl;
+// }
+// else
+// {
+//     if ((t == 1) || (t == 3) || (t == 5) || (t == 7) || (t == 8) || (t == 10) || (t == 12))
+//     {
+//         cout << "31" << endl;
+//     }
+//     else if ((t == 4) || (t == 6) || (t == 9) || (t == 11))
+//     {
+//         cout << "30" << endl;
+//     }
+//     else
+//     {
+//         if ((n % 400 == 0) || ((n % 4 == 0) && (n % 100 != 0)))
+//         {
+//             cout << "29" << endl;
+//         }
+//         else
+//         {
+//             cout << "28" << endl;
+//         }
+//     }
+// }
+
+// bai 18
+// char a;
+// cin >> a;
+// if ((a >= 97) && (a <= 122))
+// {
+//     cout << "YES \n";
+// }
+// else
+// {
+//     cout << "NO \n";
+// }
+
+// bai 19
+// char a;
+// cin >> a;
+// if ((a >= 65) && (a <= 90))
+// {
+//     cout << "YES \n";
+// }
+// else
+// {
+//     cout << "NO \n";
+// }
+
+// bai 20
+// char a;
+// cin >> a;
+// if ((a >= 97 && a <= 122) || (a >= 65 && a <= 90))
+// {
+//     cout << "YES \n";
+// }
+// else
+// {
+//     cout << "NO";
+// }
+
+// bai 21
+// char a;
+// cin >> a;
+// if ((a >= 48) && (a <= 57))
+// {
+//     cout << "YES \n";
+// }
+// else
+// {
+//     cout << "NO \n";
+// }
+
+// bai 22
+// char a;
+// cin >> a;
+// if ((a >= 'A') && (a <= 'Z'))
+// {
+//     a = a + 32;
+// }
+// cout << a;
+
+// bai 23
+// char a;
+// cin >> a;
+// if ((a >= 97) && (a <= 122))
+// {
+//     a = a - 32;
+// }
+// cout << a;
+
+// bai 24
+// char x;
+// cin >> x;
+// if (((x >= 'a') && (x <= 'z')) || ((x >= 'A') && (x <= 'Z')))
+// {
+//     if ((x == 'z') || (x == 'z'))
+//     {
+//         cout << "a\n";
+//     }
+//     else
+//     {
+//         if ((x >= 'A') && (x <= 'Z'))
+//         {
+//             x = x + 32;
+//         }
+//         ++x;
+//         cout << x << endl;
+//     }
+// }
+// else
+// {
+//     cout << "INVALID";
+// }
+
+// bai 25
+// int a, b, c;
+// cin >> a >> b >> c;
+// if ((a + b > c) && (a + c > b) && (b + c > a) && (a >0) & (b > 0) & (c > 0))
+// {
+//     cout << "YES\n";
+// }
+// else
+// {
+//     cout << "NO";
+// }
+
+//  btt1
+// int a, b, c;
+// cin >> a >> b >> c;
+// int max, min;
+// if ((a > b) && (a > c))
+// {
+//     max = a;
+// }
+// else if ((b > a) && (b > c))
+// {
+//     max = b;
+// }
+// else if ((c > b) && (c > a))
+// {
+//     max = c;
+// }
+// if ((a < b) && (a < c))
+// {
+//     min = a;
+// }
+// else if ((b < a) && (b < c))
+// {
+//     min = b;
+// }
+// else if ((c < b) && (c < a))
+// {
+//     min = c;
+// }
+// cout << max << " " << min;
+
+// btt1 (cach 2)
+// int a, b, c; cin >> a >> b >> c;
+// int max = a, min = a;
+// if (b < min ) min = b;
+// if (c < min ) min = c;
+// if (b > max ) max = b;
+// if (c > max ) max = c;
+// cout << max << " " << min << endl;
+
+// bai 26
+// long long a, b, c;
+// cin >> a >> b >> c;
+// if (((a + b > c) && (a + c > b) && (b + c > a)) && ((a > 0) && (b > 0) && (c > 0)))
+// {
+//     if ((a == b) && (b == c))
+//     {
+//         cout << "1";
+//     }
+//     else if ((a == b) || (a == c) || (b == c))
+//     {
+//         if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b))
+//         {
+//             cout << "5"; // 5 : vuong can
+//         }
+//         else
+//         {
+//             cout << "2";
+//         }
+//     }
+//     else if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b))
+//     {
+//         cout << "3";
+//     }
+//     else
+//     {
+//         cout << "4";
+//     }
+// }
+// else
+// {
+//     cout << "INVALID";
+// }
