@@ -5,12 +5,6 @@
 using namespace std;
 int main()
 {
-    int n;
-    cin >> n;
-    int nam = n / 365;
-    int tuan = (n % 365) / 7;
-    int ngay = (n % 365) % 7;
-    cout << nam << " " << tuan << " " << ngay << endl;
 
     return 0;
 }
@@ -364,4 +358,49 @@ int main()
 // else
 // {
 //     cout << "INVALID";
+// }
+
+// bai 27
+// int n;
+// cin >> n;
+// int nam = n / 365;
+// int tuan = (n % 365) / 7;
+// int ngay = (n % 365) % 7;
+// cout << nam << " " << tuan << " " << ngay << endl;
+
+// bai 28
+// int a, b, c;
+// cin >> a >> b >> c;
+// if (a == 0)
+// {
+//     if ((b == 0) && (c == 0))
+//     {
+//         cout << "INF" << endl;
+//     }
+//     else if ((b == 0) && (c != 0))
+//     {
+//         cout << "NO" << endl;
+//     }
+//     else if (b != 0)
+//     {
+//         cout << fixed << setprecision(2) << (float)-c / b;
+//     }
+// }
+// else
+// {
+//     int delta = 1.0 * b * b - 4 * a * c;
+//     if (delta < 0)
+//     {
+//         cout << "NO";
+//     }
+//     else if (delta == 0)
+//     {
+//         cout << fixed << setprecision(2) << (float)-b / 2 * a;
+//     }
+//     else
+//     {
+//         float x1 = (-b - 1.0 * sqrt(delta)) / (2 * a);
+//         float x2 = (-b + 1.0 * sqrt(delta)) / (2 * a);
+//         cout << fixed << setprecision(2) << x1 << " " << x2;
+//     }
 // }
