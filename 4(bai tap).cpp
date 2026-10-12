@@ -404,3 +404,89 @@ int main()
 //         cout << fixed << setprecision(2) << x1 << " " << x2;
 //     }
 // }
+
+// bai 29
+// float a, b;
+// cin >> a >> b;
+// int A = int(a);
+// int B = int(b);
+// if (a > A)
+// {
+//     A += 1;
+// }
+// else
+// {
+//     A;
+// }
+// if (A < B)
+// {
+//     cout << B - A + 1;
+// }
+// else
+// {
+//     cout << 0;
+// }
+
+// bai 30
+// long long a, b, c;
+// cin >> a >> b >> c;
+// if ((a / b == c) || (b / c == a) || (c / a == b))
+// {
+//     cout << "/";
+// }
+// else
+// {
+//     cout << "NOSOL";
+// }
+
+// bai 31
+// float a, b, c, d;
+// cin >> a >> b >> c >> d;
+// float tk = 1.0 * (a + b + c * 2+ d * 3) / 7;
+// if (tk >= 8)
+// {
+//     cout << "GIOI";
+// }
+// else if (/*(tk < 8)&& */ (tk >= 6.5))
+// {
+//     cout << "KHA";
+// }
+// else if (/*(tk < 6.5) &&*/ (tk >= 5))
+// {
+//     cout << "TRUNG BINH";
+// }
+// else
+// {
+//     cout << "YEU";
+// }
+
+// bai 32
+// long long a, b, c, d, e;
+// cin >> a >> b >> c >> d >> e;
+// long long min1 = a;
+// long long min2;
+// if (b < min1)
+//     min1 = b;
+// if (c < min1)
+//     min1 = c;
+// if (d < min1)
+//     min1 = d;
+// if (e < min1)
+//     min1 = e;
+
+// if (a != min1)
+//     min2 = a;
+// else
+//     min2 = b;
+
+// if (( &a != min1)& (a < min2))
+//     min2 = a;
+// if ((b != min1) && (b < min2))
+//     min2 = b;
+// if ((c != min1) && (c < min2))
+//     min2 = c;
+// if ((d != min1) && (d < min2))
+//     min2 = d;
+// if ((e != min1) && (e < min2))
+//     min2 = e;
+// cout << min2;
