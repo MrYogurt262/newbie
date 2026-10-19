@@ -8,13 +8,6 @@ int main()
 {
     int test;
     cin >> test;
-    while (test--)
-    {
-        long long b, c;
-        cin >> b >> c;
-        cout << b * 2 << "\n"
-             << c * 2 << endl;
-    }
 
     return 0;
 }

@@ -1,7 +1,7 @@
 /*
 -Đơn đồ thị vô hướng (bao gồm đỉnh và cạnh, tồn tại nhiều nhất 1 cạnh, ko có hướng)
 -Đa đồ thị vô hướng  (tồn tại nhiều cạnh, ko có hướng, cạnh bội là các cạnh nối cùng một cặp đỉnh)
--Giả đồ thị vô hướng (2 đỉnh của một cạnh ko nhất thiết phải khác nhau, nếu đầu và đuôi của cạnh có cùng định goi là khuyên)
+-Giả đồ thị vô hướng (2 đỉnh của một cạnh ko nhất thiết phải khác nhau, nếu đầu và đuôi của cạnh có cùng đỉnh gọi là khuyên)
 -Đơn đồ thị có hướng (cạnh có thứ tự gọi là cung)
 -Đa đồ thị có hướng (cung lặp là 2 cạnh cùng bắt đầu và kết thúc )
 -Đỉnh kề, cạnh liên thuộc (đỉnh kề nhau khi tồn tại cạnh nối giữa 2 đỉnh, VD; cạnh liên thuộc AB với 2 đỉnh A B)
@@ -14,8 +14,8 @@
 +Định lý: Tổng deg+(u) = tổng deg-(u)
 -Đường đi
 + Dãy các đỉnh, 2 đỉnh liên tiếp có cạnh nối
-+ Đường đi đơn: Đường đi không đi qua cạnh nào quá 1 diểm
-- Chu trình: đường đi có điểm đầu trùng với điểm cuối, mỗi cạnh phân biệt
++ Đường đi đơn: Đường đi không đi qua cạnh nào quá 1 lần. z
++ Chu trình: đường đi có điểm đầu trùng với điểm cuối, mỗi cạnh phân biệt
 + Chu trình đơn:  ngoài trừ đỉnh đầu trùng điểm cuối, còn lại ko có 2 đỉnh nào trùng nhau
 + Chu trình ko đơn: bị lặp thêm đỉnh ngoài đỉnh đầu và cuối
 - Liên thông: đồ thị vô hướng liên thông nếu luôn tìm được đường đi giữa 2 điểm bất kì

@@ -473,12 +473,10 @@ int main()
 //     min1 = d;
 // if (e < min1)
 //     min1 = e;
-
 // if (a != min1)
 //     min2 = a;
 // else
 //     min2 = b;
-
 // if (( &a != min1)& (a < min2))
 //     min2 = a;
 // if ((b != min1) && (b < min2))
