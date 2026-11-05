@@ -5,15 +5,15 @@ using namespace std;
 
 int main()
 {
-    long long n;
-    cin >> n;
-    if (n % 100 == 0)
+    long long a, b, c;
+    cin >> a >> b >> c;
+    if (a + b >= c)
     {
-        cout << n / 100;
+        cout << a + b + c;
     }
-    else
+    else if (a + b < c)
     {
-        cout << n / 100 + (n % 100) / 20 + ((n % 100) % 20) / 10 + (((n % 100) % 20) % 10) / 5 + ((((n % 100) % 20) % 10) % 5) / 1;
+        cout << 2 * a + 2 * b;
     }
 
     return 0;
@@ -126,3 +126,15 @@ int main()
 // cout << SDX;
 
 // bai 8
+// long long n;
+// cin >> n;
+// if (n % 100 == 0)
+// {
+//     cout << n / 100;
+// }
+// else
+// {
+//     cout << n / 100 + (n % 100) / 20 + ((n % 100) % 20) / 10 + (((n % 100) % 20) % 10) / 5 + ((((n % 100) % 20) % 10) % 5) / 1;
+// }
+
+// bai 9

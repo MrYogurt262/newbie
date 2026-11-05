@@ -6,9 +6,22 @@ using namespace std;
 
 int main()
 {
-    int test;
-    cin >> test;
-
+    long long n;
+    cin >> n;
+    int tong = 0;
+    if (n == 0)
+    {
+        cout << "1";
+    }
+    else
+    {
+        while (n != 0)
+        {
+            ++tong;
+            n /= 10;
+        }
+        cout << tong;
+    }
     return 0;
 }
 // c1
@@ -87,3 +100,14 @@ int main()
 //     cout << x << endl;
 //     x++;
 // } while (x <= 2);
+
+// c8
+// int n;
+// cin >> n;
+// long long t = 1;
+// for (int i = 1; i <= n; i++)
+//     if (n % i == 0)
+//     {
+//         t *= i;
+//     }
+// cout << t;
