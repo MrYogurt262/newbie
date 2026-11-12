@@ -4,25 +4,23 @@
 
 using namespace std;
 
-main()
+int main()
 {
-    int n;
-    cin >> n;
-    while (n != 0)
+    long long x;
+    cin >> x;
+    if (cin >> x)
     {
-        long long a;
-        cin >> a;
-        long long sq = sqrt(a);
-        if (sq * sq == a)
-        {
-            cout << "YES\n";
-        }
-        else
-        {
-            cout << "NO\n";
-        }
-        --n;
+        long long max = x;
     }
+    while (cin >> x)
+    {
+        if (x > max)
+        {
+            max = x;
+        }
+        cout << max;
+    }
+
     return 0;
 }
 
@@ -109,4 +107,23 @@ main()
 // for (int i = 1; i <= 10; i++)
 // {
 //     cout << n * i << " ";
+// }
+
+// idk
+// int n;
+// cin >> n;
+// while (n != 0)
+// {
+//     long long a;
+//     cin >> a;
+//     long long sq = sqrt(a);
+//     if (sq * sq == a)
+//     {
+//         cout << "YES\n";
+//     }
+//     else
+//     {
+//         cout << "NO\n";
+//     }
+//     --n;
 // }
